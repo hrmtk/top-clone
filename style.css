@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+
+:root {
+  --nwred: #f72210;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+h1, h2, h3, h4, p {
+  color: #4a4a4a;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  font-size: 30px;
+  color: #66cccc;
+}
+
+.accent {
+  color: #ce973e;
+}
+
+/* header */
+.navbar {
+  color: rgba(74, 74, 74, 0.7);
+  font-weight: bold;
+  padding: 0 168px;
+}
+
+.nav {
+  min-width: 500px;
+}
+
+.navbar .nav li {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 1em;
+}
+
+.navbar .fa-bars {
+  display: none;
+}
+
+/* main */
+.container {
+  max-width: 1140px;
+
+}
+
+.lesson-header {
+  margin: 30px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+}
+
+.lesson-header h2 {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.map {
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: 0.8px;
+}
+
+.map .select {
+  color: #4a4a4a;
+}
+
+.map li {
+  margin: 20px;
+  color: gray;
+}
+
+.lesson-content h3 {
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.lesson-content p {
+  margin-bottom: 30px;
+  line-height: 1.9;
+}
+
+p {
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+}
+
+.assignment-panel {
+  background: #f3f3f3;
+  padding: 1.5em;
+  margin: 20px 0 50px 0;
+}
+
+.assignment-panel ol {
+  padding-left: 1.25em;
+  line-height: 1.9;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.assignment-panel li {
+  margin: 15px 0;
+  color: #4a4a4a;
+  font-size: 1.125rem;
+}
+
+.lesson-content a {
+  text-decoration: underline;
+}
+
+.assignment-panel h4 {
+  margin-top: 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+summary {
+  color: gray;
+}
+
+.additional-resources li {
+  margin-left: 20px;
+  color: gray;
+}
+
+.lesson-functions {
+  padding: 70px 0;
+  background: #eee;
+  text-align: center;
+}
+
+.card-main {
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 40px 60px;
+}
+
+.lesson-btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-gap: 3em;
+}
+
+
+.button--secondary {
+  background: #ce973e;
+}
+
+.button--primary {
+  background: #6abfc3;
+}
+
+.button {
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 1rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.bottom-cta {
+  margin: 40px auto;
+
+}
+
+.bottom-cta h1 {
+  color: rgba(74, 74, 74, 0.7);
+}
+
+.bottom-cta p {
+  margin: 40px auto;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+.advert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.advert-header h3 {
+  display: inline-block;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  color: rgba(74, 74, 74, 0.7);
+  width: 70%;
+  text-align: left;
+}
+
+.advert-body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.advert-body h3 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.advert-body li {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* footer */
+footer {
+  min-height: 277px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+footer .navbar-brand {
+  padding-left: 10px;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+.footer-social li{
+  display: inline-block;
+  padding-left: 1.5em;
+  font-size: 1.5em;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-links-container {
+  margin: 0 10px;
+  font-weight: bold;
+  line-height: 2;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+
+/*
+  ========================================
+  Media Queries
+  ========================================
+*/
+
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+
+  .container {
+    max-width: 540px;
+  }
+}
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+
+  header .navbar {
+    padding: 0 20px;
+  }
+
+  .flex {
+    align-items: center;
+  }
+
+  .nav {
+    min-width: 30px;
+  }
+
+  .navbar .fa-bars {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .advert-body li {
+    display: block;
+    padding-top: 20px;
+  }
+
+  footer .navbar-brand {
+    display: none;
+  }
+
+}
+
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+
+  .container {
+    max-width: 720px !important;
+  }
+
+  .odin-logo img{
+    height: 60px;
+  }
+
+  .odin-title img {
+    height: 35px;
+  }
+
+  .lesson-content {
+    margin: 20px 4em;
+  }
+
+  .lesson-btn-group {
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+
+  .advert-header,
+  .advert-body {
+    flex-direction: column;
+  }
+
+  .advert-header h3 {
+    text-align: center;
+  }
+}
+
+ /* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+  
+  .container {
+    max-width: 960px;
+  }
+}
